@@ -8,7 +8,7 @@ const songs = () => {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=17933",
       color: ["#484F65", "#3C4C67"],
       id: 1,
-      active: "true",
+      active: true,
     },
     {
       name: "Safe Haven",
@@ -18,7 +18,7 @@ const songs = () => {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=20123",
       color: ["#0F5ABC", "#A3BF59"],
       id: 2,
-      active: "false",
+      active: false,
     },
     {
       name: "Bliss",
@@ -28,7 +28,7 @@ const songs = () => {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9248",
       color: ["#2E385B", "#F0887E"],
       id: 3,
-      active: "false",
+      active: false,
     },
     {
       name: "Lavish",
@@ -38,7 +38,7 @@ const songs = () => {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=17933",
       color: ["#484F65", "#3C4C67"],
       id: 4,
-      active: "false",
+      active: false,
     },
     {
       name: "Bliss",
@@ -48,7 +48,7 @@ const songs = () => {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9248",
       color: ["#2E385B", "#F0887E"],
       id: 5,
-      active: "false",
+      active: false,
     },
     {
       name: "Bliss",
@@ -58,7 +58,7 @@ const songs = () => {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9248",
       color: ["#2E385B", "#F0887E"],
       id: 6,
-      active: "false",
+      active: false,
     },
     {
       name: "Bliss",
@@ -67,8 +67,8 @@ const songs = () => {
       artist: "Misha, Jussi Halme",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9248",
       color: ["#2E385B", "#F0887E"],
-      id: 7,
-      active: "false",
+      id: 17,
+      active: false,
     },
   ];
 };
