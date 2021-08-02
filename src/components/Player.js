@@ -7,7 +7,14 @@ import {
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Player({ audioRef, isPlaying, setIsPlaying, songInfo, setSongInfo }) {
+function Player({
+  audioRef,
+  isPlaying,
+  setIsPlaying,
+  songInfo,
+  setSongInfo,
+  songs,
+}) {
   const playSongHandler = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -22,6 +29,10 @@ function Player({ audioRef, isPlaying, setIsPlaying, songInfo, setSongInfo }) {
     return (
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
     );
+  };
+
+  const skipTrackHandler = (direction) => {
+    console.log();
   };
 
   const dragHandler = (e) => {
@@ -44,7 +55,12 @@ function Player({ audioRef, isPlaying, setIsPlaying, songInfo, setSongInfo }) {
         <p>{getTime(songInfo.duration || 0)}</p>
       </div>
       <div className="play-control">
-        <FontAwesomeIcon className="skip-back" icon={faAngleLeft} size="2x" />
+        <FontAwesomeIcon
+          onClick={() => skipTrackHandler("skip-back")}
+          className="skip-back"
+          icon={faAngleLeft}
+          size="2x"
+        />
         <FontAwesomeIcon
           onClick={playSongHandler}
           className="play"
@@ -52,6 +68,7 @@ function Player({ audioRef, isPlaying, setIsPlaying, songInfo, setSongInfo }) {
           size="2x"
         />
         <FontAwesomeIcon
+          onClick={() => skipTrackHandler("skip-forward")}
           className="skip-forward"
           icon={faAngleRight}
           size="2x"

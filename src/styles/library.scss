@@ -8,9 +8,18 @@
   box-shadow: 2px 2px 50px rgb(165, 165, 165);
   font-family: "Montserrat", sans-serif;
   overflow-y: scroll;
+  transform: translateX(0%);
+  transition: all 0.5s ease;
+  opacity: 1;
   h2 {
     padding: 2rem;
   }
+}
+
+.close {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .library-song {
